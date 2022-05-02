@@ -1,0 +1,108 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+:root{
+    --color-primary: purple;
+    --color-secondary: blue;
+    --color-secondary-light: rgb(29, 88, 197);
+
+}
+/* Classi utility */
+.container{
+    width: 964px;
+    margin: 0 auto;
+    /* Solo per debug */
+    border: 1px dashed red;
+    padding: 2rem 2rem;
+}
+/* Solo padding laterale al container */
+.padding-big-container{
+    padding: 0 4rem;
+}
+.padding-medium-container{
+    padding: 0 2.5rem;
+}
+.padding-medium-container{
+    padding: 0 1rem;
+}
+/* Solo padding top alle section */
+.section{
+    padding: 2rem 0 0 0;
+}
+.purple-background{
+    background-color: var(--color-primary);
+}
+.blue-background{
+    background-color:var(--color-secondary);
+}
+.light-blue-background{
+    background-color:var(--color-secondary-light);
+}
+/* Flex class */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-start{
+    align-items: flex-start;
+}
+.flex-end{
+    align-items: flex-end;
+}
+.flex-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.gap{
+    gap: 1rem;
+}
+.hidden-class{
+    display: flex;
+}
+.column{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.column-1{
+    flex-basis: calc(100% / 3);
+}
+.column-2{
+    flex-basis: calc((100% / 3) * 2);
+}
+/* Other class */
+.button{
+    padding: .4rem .6rem;
+}
+
+
+/* Query */
+@media screen and (max-width: 992px) {
+    .container{
+        width: 736px ;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 534px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+}
