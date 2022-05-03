@@ -232,6 +232,15 @@ img{
     border-radius: 50%;    
     overflow: hidden;
 }
+.radius-50-bigger{
+    position: relative;
+    height: 100%;
+    border-radius: 50%;    
+    overflow: hidden;
+}
+.absolute-quotes{
+    position: absolute;
+}
 .radius-50 img{
     height: 100%;
     width: 100%;
