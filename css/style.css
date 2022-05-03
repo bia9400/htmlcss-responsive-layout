@@ -43,6 +43,9 @@ img{
 .font-big{
     font-size: 35px;
 }
+.font-huge{
+    font-size: 55px;
+}
 /* Classi utility */
 .container{
     width: 964px;
@@ -155,6 +158,10 @@ img{
     border-radius: 50%;
     background-color: white;
     color: black;   
+}
+.button-normal{
+    border-radius: 20px;
+    padding: .4rem 2rem;
 }
 .header-button{
     border-radius: 20px;
