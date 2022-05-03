@@ -12,8 +12,8 @@ header{
     padding: 1rem 0;
     background-color: var(--color-secondary);
     width: 100%;
-    position: fixed;
-    z-index: 2;
+    /* position: fixed;
+    z-index: 2; */
     color: white;
 }
 main{
@@ -34,8 +34,14 @@ i{
 img{
     width: 100%;
 }
-.font-20{
+.font-little{
+    font-size: 18px;
+}
+.font-medium{
     font-size: 25px;
+}
+.font-big{
+    font-size: 35px;
 }
 /* Classi utility */
 .container{
@@ -57,8 +63,24 @@ img{
 .padding-medium-container{
     padding: 0 1rem;
 }
+.padding-phone-section{
+    padding: 3.5rem 1.5rem;
+}
+.padding-left-2{
+    padding-left: 2rem;
+}
+.little-padding{
+    padding: .5rem 0;
+}
+
 /* Solo padding top alle section */
 .section{
+    padding: 2rem 0;
+}
+.big-pad-top{
+    padding: 6rem 0 2rem 0;
+}
+.pad-equal-2{
     padding: 2rem 0;
 }
 .purple-background{
@@ -72,6 +94,12 @@ img{
 }
 .text-center{
     text-align: center;
+}
+.text-white{
+    color: white;
+}
+.text-primary-color{
+    color: var(--color-primary);
 }
 
 /* Flex class */
@@ -105,6 +133,7 @@ img{
     gap: 2rem;
 }
 .hidden-class{
+    align-items: baseline;
     display: flex;
 }
 .column-default{
@@ -118,14 +147,17 @@ img{
     
 }
 .column-2{
-    flex-basis: calc((100% / 3) * 2 - 1rem);
+    flex-basis: calc((100% / 3) * 2 - .5rem);
 }
 /* Other class */
 .button{
     padding: .4rem .6rem;
-    border-radius: 40px;
+    border-radius: 50%;
     background-color: white;
     color: black;   
+}
+.header-button{
+    border-radius: 20px;
 }
 .primary-button{
     background-color: var(--color-primary);
@@ -138,8 +170,11 @@ img{
     color: black;
 }
 .secondary-button{
+    border-radius: 30px;
+    font-size: 1.2rem;
     background-color: var(--color-secondary);
     color: white;
+    padding: 0 3rem;
 }
 .card{
     padding: 2rem 2rem;
@@ -164,28 +199,37 @@ img{
 .card-white{
     background-color: white;
 }
+.half{
+    width: 65%;
+    margin: auto;
+}
+.padding-reset{
+    padding: 0;
+}
 .phone-img{
     width: 220px;
-    position: relative;
-    left: 30px;
-    top: 36px;
+    display: block;
+    
 }
-.fa-apple{
+#apple-icon{
     color: white;
-    font-size: 1rem;
-    padding: 0 .5rem;
+    font-size: 1.1rem;
+    padding: 1rem .5rem;
 }
 .little-width{
     flex-basis: 20%;
 }
 .radius-50 {
-    height: 250px;
-    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;    
     overflow: hidden;
 }
 .radius-50 img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
+    
 }
 footer{
     background-color: #333333;
